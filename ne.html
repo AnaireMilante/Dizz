@@ -1,80 +1,115 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Кнопки</title>
-    <style>
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Кнопки</title> 
+    <style> 
+        .button-container { 
+            display: flex; /* Используем Flexbox для выравнивания */ 
+            justify-content: space-between; /* Равномерное распределение элементов */ 
+            width: 100%; /* Занимает всю ширину родительского элемента */ 
+        } 
 
+        .button { 
+            background-color: #1E6D74; 
+            border: none; 
+            color: white; 
+            padding: 10px 20px; 
+            text-align: center; 
+            text-decoration: none; 
+            display: inline-block; 
+            font-size: 16px; 
+            margin: 4px 2px; 
+            border-radius: 5px; 
+            cursor: pointer; 
+        } 
 
-        .button-container {
-            display: flex; /* Используем Flexbox для выравнивания */
-            justify-content: space-between; /* Равномерное распределение элементов */
-            width: 100%; /* Занимает всю ширину родительского элемента */
-        }
+        .box { 
+            color: #fff; 
+            font-size: 2rem; /* Исправлено: front-size на font-size */ 
+            width: 500px; /* Исправлено: widht на width */ 
+            height: 500px; 
+            overflow-y: auto; 
+        } 
 
-        .button {
-            background-color: #1E6D74;
-            border: none;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-		html{ 
-			  background-image: url(bg_page3.jpg); 
-			  padding: 20px; 
-			  background-color: #5015C65; /* Цвет фона веб-страницы */ 
-			  background-size: cover; /* Заполнить фон всей страницей */
-			  background-blend-mode: multiply; /* Режим смешивания цветов для полупрозрачного эффекта */
-			  } 
-			  body{  
-			  padding: 20px; 
-			  background: url(bg_page.png) repeat-x; 
-			 
-	  
-   
-   }   
- 
-  p{ 
-  padding: 20px; 
-  font-size: 20px; 
-  color: #006363; 
-   
-  }
-    </style>
-</head>
-	<header>
-	
-	</header>
-<body>
+        .content { 
+            padding: 20px;  
+            color: #fff;  
+            max-width: 800px;  
+            margin: auto;  
+        } 
 
-    <div class="header">
-        <div class="button-container">
-            <button class="button">Меню</button>
-            <button class="button">Как играть</button>
-            <button class="button">Результаты</button>
+        html {  
+            background-image: url(bg_page3.jpg);  
+            height: 100%; 
+            padding: 20px;  
+            background-color: #5015C6; /* Исправлено: Цвет фона веб-страницы */  
+            background-size: cover; /* Заполнить фон всей страницей */ 
+             /* Режим смешивания цветов для полупрозрачного эффекта */ 
+        }  
 
-            <button class="button">Поиск</button>
-            <button class="button">Регистрация</button>
-            <button class="button">Войти</button>
-        </div>
-    </div>
-
-    <header>
-            <h1 style="text-align:center;">Game&Lerning</h1>
-        </header>
+        body {  
 		
-        <article>
-            <h2 style="text-align:center;">Сайт для тех, кто хочет развиваться</h2>
-            <p>Рада приветствовать вас на своем сайте.</p>
-        </article>
-        <footer>что-то тут надо написать про свою игрулю</footer>
-    </body>
+            padding: 20px;  
+            background: url(bg_page.png) repeat-x;  
+        }  
 
-</body>
+        .fixed-image { 
+            position: fixed;  
+            /*top: 0;  
+            left: 0;  
+            width: 100%;  
+            height: auto;  
+            z-index: -1; */ /* Подложим картинку под весь контент */ 
+        }     
+
+        p {  
+            padding: 20px;  
+            font-size: 20px;  
+            color: #006363;  
+        } 
+		 .main-block {
+            position: fixed; /* Fix the position, so it moves with scroll */
+            top: 60%; /* Центрируем блок по вертикали */
+            left: 50%;
+            transform: translate(-50%, -50%); /* Центрируем по горизонтали */
+            width: 60%;
+            height: 90%; /* Задайте высоту, если необходимо */
+            background-color: rgba(255, 255, 255, 0.4); /* Полупрозрачный цвет */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для блок */
+            overflow: auto; /* Добавляет прокрутку, если контент превышает размеры блока */
+        }
+    </style> 
+</head> 
+<body> 
+    <div class="header"> 
+        <div class="button-container"> 
+            <button class="button">Меню</button> 
+            <button class="button">Как играть</button> 
+            <button class="button">Результаты</button> 
+            <button class="button">Поиск</button> 
+            <button class="button">Регистрация</button> 
+            <button class="button">Войти</button> 
+        </div> 
+    </div> 
+
+
+    <div class="content main-block">
+	    <header> 
+        <h1 style="text-align:center;">Game&Learning</h1> 
+		</header> 
+   
+ 
+        <h2 style="text-align:center;">Сайт для тех, кто хочет развиваться</h2> 
+        <p align="center">Рада приветствовать вас на своем сайте, где вы сможете изучить 3D моделлирование в приложении. <br> 
+        "Jamp&Learning" – это интуитивно понятное и увлекательное мобильное приложение, которое позволяет пользователям всех возрастов погрузиться в мир 3D моделирования.<br>  
+        С помощью интерактивных уроков, мини-игр и всевозможных проектов вы сможете освоить навыки моделирования, аранжирования и текстурирования объектов.<br></p> 
+        
+        <p>Основные функции: 
+        - Интерактивные уроки: Приложение предлагает пошаговые инструкции, которые помогут вам понять основы 3D моделирования, начиная с простых объектов и заканчивая сложными фигурами. 
+        - Игровая механика: Превратите обучение в игру! За выполнение заданий и достижение целей вы будете получать награды и открывать новые инструменты и функции. 
+        </p> 
+		
+    </div> 
+</body> 
 </html>
 
