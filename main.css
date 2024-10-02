@@ -29,11 +29,11 @@ table {
 } 
 /* конец кода сброса стилей браузера */
 html {
-	background-color: rgb(224, 240, 255);
+	background-color: rgb(6, 71, 69);
 
 body{
-	background-color: rgb(225, 255,255);
-	border: 3px solid rgb(75,75,75);
+	background-color: rgb(99, 191,188);
+	border: 3px solid rgb(193, 146,51);
 	margin-top: 20px;
 	max-width: 760px;
 	margin-left: auto;
