@@ -2,41 +2,55 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Фоновые изображения</title>
-<link href="styles.css" rel="stylesheet">
-<style>
-
-</style>
+<title>TOP</title>
+<link href="style.css" rel="stylesheet">
 </head>
 <body>
-<div class="wrapper">
-<div class="banner">
-<h1>Большая книга CSS</h1>
-</div>
-<div class="main">
-<h2>Lorem Ipsum Dolor Sat</h2>
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
-<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-<h2>Nisi Ut Aliquid</h2>
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
-<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-</div>
-<div class="announcement">
-<h2>Уведомления</h2>
-<ul>
-<li>Lorem Ipsum Dolor Sat</li>
-<li>Quis nostrum exercitationem ullam</li>
-<li>Eius modi tempora incidunt</li>
-<li>Quis autem vel eum iure reprehenderit</li>
-<li> Sed quia non numquam eius modi tempora incidu</li>
-<li>Nemo enim ipsam voluptate</li>
+<header>
+<h1>Топовые фоны </h1>
+<nav>
+	<ul>
+		<li><a href="#">Главная</a></li>
+		<li><a href="#">Галерея фонов</a></li>
+		<li><a href="#">О нас</a></li>
+		<li><a href="#">Контакты</a></li>
+	</ul>
+</nav>
+</header>
+<div class="gallery">
+<figure>
+<img src="images/1.jpg" width="300" height="210" alt="Размер фона">
+<figcaption><strong>Размер фона</strong> Имя свойства, задающего размер фонового изображения, background-size, однозначно указывает на роль этого свойства. Размер фонового изображения — это его ширина и высота. При настройке этого свойства нужно учитывать то, что первое значение представляет ширину, а второе — высоту.</figcaption>
+</figure>
+<figure>
+<img src="images/2.jpg" width="300" height="210" alt="Множественный фон">
+<figcaption><strong>Множественный фон</strong> В свойстве background может быть описан один слой фона, до сих пор мы видели именно такие описания, или — несколько слоёв, свойства которых разделены запятой. Если размеры нескольких фоновых изображений одинаковы, одно из них полностью перекроет другие.</figcaption>
+</figure>
+<figure>
+<img src="images/3.jpg" width="300" height="210" alt="Порядок наложения фоновых изображений друг на друга">
+<figcaption><strong>Порядок наложения фоновых изображений друг на друга</strong> При оснащении элемента несколькими фоновыми изображения, в том случае, если одно из них занимает всю ширину и высоту родительского элемента, важное значение приобретает порядок наложения фонов друг на друга. Принять решение о том, в каком порядке фоны должны накладываться друг на друга, может быть не особенно просто. Рассмотрим следующий пример.</figcaption>
+</figure>
+<figure>
+<img src="images/4.jpg" width="300" height="210" alt="Сплошные цвета">
+<figcaption><strong>Сплошные цвета</strong>редположим, нам, используя CSS-инструменты настройки фона элемента, нужно сформировать одноцветный фон. Как это сделать? Это, благодаря CSS-градиентам, совсем несложная задача. Дело в том, что если воспользоваться функцией linear-gradient с одинаковыми стоп-цветами, это приведёт к появлению сплошного цвета.</figcaption>
+</figure>
+<figure>
+<img src="images/5.jpg" width="300" height="210" alt="Затемнение фонового изображения">
+<figcaption><strong>Затемнение фонового изображения</strong> Часто, ради облегчения чтения текста верхнего раздела страницы, фоновое изображение этого раздела нужно затемнить. Это несложно сделать, воспользовавшись двумя фоновыми изображениями.</figcaption>
+</figure>
+<figure>
+<img src="images/6.jpg" width="300" height="210" alt="Рисование средствами CSS">
+<figcaption><strong>Рисование средствами CSS</strong>  Возможности использования CSS-градиентов для рисования поистине безграничны. В частности, речь идёт о градиентах, описываемых с помощью функций linear-gradient, radial-gradient и других. В этом простом примере мы разберёмся с тем, как, используя градиенты, нарисовать ноутбук.</figcaption>
+</figure>
+<figure>
+<img src="images/7.jpg" width="300" height="210" alt="Смешивание нескольких фонов">
+<figcaption><strong>Смешивание нескольких фонов</strong> Возможность использования различных режимов смешивания фонов, накладываемых друг на друга, открывает широкий простор для достижения различных эффектов. Простейший способ использования этого приёма заключается в обесцвечивании изображений. Представим, что в CSS имеется цветное фоновое изображение, которое нужно обесцветить, сделать чёрно-белым.</figcaption>
+</figure>
 
-</ul>
-</div>
+<footer>
 <div class="copyright">
-<p>Собственность 2015, Lorem Ipsum Corporation</p>
+<p>Пользуетесь ли вы множественными фонами в CSS?</p>
 </div>
-</div>
+</footer>
 </body>
 </html>
